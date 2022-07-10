@@ -1,41 +1,107 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="login.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- for register and login html -->
+    <link rel="stylesheet" href="login.css" />
     <title>YGOArchive! Skeleton</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container-fluid">
         <section>
+
             <div class="row">
                 <div class="col-12">
-                    <div class="row">
-                        <div class="col-12"><img alt="YGOArchive"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <form>
-                                <label for="key">Username</label>
-                                <input id="key" type="text">
-                                <label for="password">Password</label>
-                                <input id="password" type="password">
-                                <input type="submit">
-                            </form>
-                        </div>
-                    </div>
+                    <h1><strong>Collection Information</strong></h1>
+                    <table class="border">
+                        <tr class="text-center">
+                            <th class="border">Total Card Count</th>
+                            <th class="border">Unique Card Count</th>
+                        </tr>
+                        <tr class="text-center bg-secondary">
+                            <td class="border">420</td>
+                            <td class="border">69</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h1><strong>My YGO Collection</strong></h1>
+                    <label for="search-collection"><strong>Search Collection</strong></label>
+                    <input id="search-collection" type="text" placeholder="Search by name, set or quantity">
+                    <table class="border">
+                        <tr class="text-center">
+                            <th class="border">Name</th>
+                            <th class="border">Set Number</th>
+                            <th class="border">Quantity</th>
+                        </tr>
+                        <tr class="text-center bg-secondary">
+                            <td class="border">Blue Eyes</td>
+                            <td class="border">LOB-001</td>
+                            <td class="border">3</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td class="border">Dark Magician</td>
+                            <td class="border">LOB-002</td>
+                            <td class="border">3</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h1><strong>Add To My Collection</strong></h1>
+                    <form>
+                        <label for="add-name"><strong>Name</strong></label>
+                        <input id="add-name" type="text" placeholder="Card Name">
+                        <label for="add-set"><strong>Set Number</strong></label>
+                        <input id="add-set" type="text" placeholder="Set Number">
+                        <input type="submit">
+                    </form>
+                    <table class="border">
+                        <tr class="text-center">
+                            <th class="border">Name</th>
+                            <th class="border">Set Number</th>
+                            <th class="border">Quantity</th>
+                        </tr>
+                        <tr class="text-center bg-secondary">
+                            <td class="border">Blue Eyes</td>
+                            <td class="border">LOB-001</td>
+                            <td class="border">3</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td class="border">Dark Magician</td>
+                            <td class="border">LOB-002</td>
+                            <td class="border">3</td>
+                        </tr>
+                    </table>
+                    <button>Add to Collection</button>
+                    <button>Reset</button>
                 </div>
             </div>
         </section>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
